@@ -343,9 +343,24 @@ input[type="radio"] {
     align-items: center;
     position: relative;
 }
+.fest_box:not(.fest_box:last-child)::after {
+    width: calc(100% - 100px);
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: rgb(109, 109, 109);
+    content: '';
+}
+.fest_box > span {
+    position: absolute;
+    right: 50px;
+    font-size: 15px;
+    color: rgb(109, 109, 109);
+}
 .fest_box > p {
     position: absolute;
-    left: 100px;
+    left: 50px;
     font-size: 20px;
     color: rgb(109, 109, 109);
 }
