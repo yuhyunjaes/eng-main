@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ko" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="english.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="real_header">
+            <header>
+                <div class="logo"><a onclick="home()"><h1 class="logo_text">Yeosu</h1></a></div>
+                <nav class="menu_box">
+                    <ul class="menu">
+                        <li><a style="--col: #0080FF;" onclick="a_tage1()" class="header_a">tourist</a></li>
+                        <li><a style="--col: #0080FF;" onclick="a_tage2()" class="header_a">food</a></li>
+                        <li><a style="--col: #0080FF;" onclick="a_tage3()" class="header_a">activities</a></li>
+                        <li><a style="--col: #0080FF;" onclick="a_tage4()" class="header_a">other</a></li>
+                    </ul>
+                </nav>
+                <div class="user_box">
+                    <div class="user_a_box">
+                        <a class="login" href="">Sign in</a>
+                        <a class="sign" href="">Sign up</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class="video_container">
+            <div class="video_text_box">
+                <div class="video_text_container">
+                    <div class="video_h1_box">
+                        <h1>Explore Yeosu</h1>
+                        <p>Discover the beauty of Yeosu's coastal<br> culture and vibrant experiences</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <video id="video" src="image/youtube_NoEic6WSQ20_1920x1080_h264.mp4" autoplay muted></video>
+        </div>
+
+        <div class="content_container">
+            <div class="content1">
+                <div class="content1_box">
+                    <div class="content1_header">
+                        <h1>Destination</h1>
+                        <div class="content1_menu">
+                            <label for="content1_body1">Top Attractions</label>
+                            <label for="content1_body2">Hidden Gems</label>
+                            <label for="content1_body3">Family-Friendly Places</label>
+                        </div>
+                    </div>
+                    <div class="content1_body">
+                        <input type="radio" name="content1_body" id="content1_body1" checked>
+                        <div class="content1_body1">
+                            <div class="content1_img">
+                                <div>
+                                    <div class="content_banner">
+                                        <img src="image/content_box_img/dolsan_bridge2.jpg" alt="">
+                                        <div class="content_banner_footer">
+                                            <p>Dolsan Bridge</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="content_banner">
+                                        <img src="image/content_box_img/SE-b4fd3d41-d87a-48cd-9103-3ee9d2333c73.jpg" alt="">
+                                        <div class="content_banner_footer">
+                                            <p>Odongdo</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="content_banner">
+                                        <img src="image/content_box_img/15.jpg" alt="">
+                                        <div class="content_banner_footer">
+                                            <p>Hamel Lighthouse</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="radio" name="content1_body" id="content1_body2">
+                        <div class="content1_body2">
+                            <div class="content1_img">
+                                <div>
+                                    <div class="content_banner">
+                                        <img src="image/content_box_img/0.jpg" alt="">
+                                        <div class="content_banner_footer">
+                                            <p>Keun-Kkeut Lighthouse</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="content_banner">
+                                        <img src="image/content_box_img/DSC05118.jpeg" alt="">
+                                        <div class="content_banner_footer">
+                                            <p>Prehistoric Remains Park</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="content_banner">
+                                        <img src="image/content_box_img/DSC06383.jpeg" alt="">
+                                        <div class="content_banner_footer">
+                                            <p>Gasari Reed Field</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <input type="radio" name="content1_body" id="content1_body3">
+                        <div class="content1_body3">
+                            <div class="content1_img">
+                                <div>
+                                    <div class="content_banner">
+                                        <img src="image/content_box_img//16bc5b58-2174-42f8-a76a-435e9bb9cef0.jpg" alt="">
+                                        <div class="content_banner_footer">
+                                            <p>Teddy Bear Museum</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="content_banner">
+                                        <img src="image/아쿠아/unnamed.jpg" alt="">
+                                        <div class="content_banner_footer">
+                                            <p>Aquaplanet</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="content_banner">
+                                        <img src="image/content_box_img/15991198133721.png" alt="">
+                                        <div class="content_banner_footer">
+                                            <p>U-World</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="content2_1">
+                    <div class="content2_banner"> 
+                        <div class="con2_header">
+                            <h1>Experiences</h1>
+                            <a href="#">></a>
+                        </div>
+                        <div class="con2_body">
+                            <p class="con2_text">
+                                Enjoy unique activities <br> in Yeosu
+                            </p>
+                            <img src="image/map/faf0d855-024f-41dc-aeff-4f65890cb4e0.png" alt="">
+                        </div>
+                    </div>
+                    <div class="content2_bannerr">
+                        <div class="con2_header">
+                            <h1>Food Map</h1>
+                            <a href="#">></a>
+                        </div>
+                        <div class="con2_body">
+                            <p class="con2_text">
+                                Find the best local restaurants <br> and dishes
+                            </p>
+                            <img src="image/map/food.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content2_2">
+                    <div class="content2_banner">
+                        <div class="fas_header">
+                            <h1>Yeosu Festivals</h1>
+                        </div>
+                        <div class="fas_body">
+                            <div class="fest_box">
+                                <!-- <img src="축제 대표사진" alt=""> -->
+                                <p>Yeosu Turtle Ship Festival</p>
+                                <!-- <span>날짜 월</span> -->
+                            </div>
+                            <div class="fest_box">
+                                <!-- <img src="축제 대표사진" alt=""> -->
+                                <p>Yeosu Turtle Ship Festival</p>
+                                <!-- <span>날짜 월</span> -->
+                            </div>
+                            <div class="fest_box">
+                                <!-- <img src="축제 대표사진" alt=""> -->
+                                <p>Yeosu Turtle Ship Festival</p>
+                                <!-- <span>날짜 월</span> -->
+                            </div>
+                            <div class="fest_box">
+                                <!-- <img src="축제 대표사진" alt=""> -->
+                                <p>Yeosu Turtle Ship Festival</p>
+                                <!-- <span>날짜 월</span> -->
+                            </div>
+                            <div class="fest_box">
+                                <!-- <img src="축제 대표사진" alt=""> -->
+                                <p>Yeosu Turtle Ship Festival</p>
+                                <!-- <span>날짜 월</span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="show_back_img">
+            <div class="back_img_box">
+                <div>
+                    <img src="image/back_img/AKR20210430108100054_01_i_P4.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/back_img/hyang_1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/back_img/istockphoto-1041013826-612x612.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/back_img/istockphoto-1041131274-612x612.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/back_img/istockphoto-1140348357-612x612.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/back_img/istockphoto-1140353975-612x612.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/back_img/istockphoto-1151396345-612x612.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/back_img/istockphoto-1317613913-612x612.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/back_img/istockphoto-1317706257-612x612.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="tourist_container" id="tourist_container">
+            <div class="tourist_bin"></div>
+            <div class="tourist_header">
+                <h1>Tourist Attractions You Must Visit<br>in Yeosu</h1>
+            </div>
+            <div class="tourist_body">
+                <div class="tourist_label_box">
+                    <input type="radio" name="no_ip" id="noim1" checked>
+                    <label for="noim1" onclick="slider1()">Odongdo</label>
+
+                    <input type="radio" name="no_ip" id="noim2">
+                    <label for="noim2" onclick="slider2()">Yeosu Arts Land</label>
+
+                    <input type="radio" name="no_ip" id="noim3">
+                    <label for="noim3" onclick="slider3()">Hyangiram</label>
+
+                    <input type="radio" name="no_ip" id="noim4">
+                    <label for="noim4" onclick="slider4()">Dolsan</label>
+
+                    <input type="radio" name="no_ip" id="noim5">
+                    <label for="noim5" onclick="slider5()">Aquaplanet</label>
+                </div>
+                <div class="tourist_slider_container">
+                    <button onclick="left_slide()" class="left_btn"></button>
+                    <button onclick="right_slide()" class="right_btn"></button>
+                    <div class="tourist_slider">
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                        <div class="slide"></div>
+                    </div>
+                    <div class="slider_control_container">
+                        <div class="slider_control_box">
+                            <button onclick="sl_bt1()" class="sl_bt1">1</button>
+                            <button onclick="sl_bt2()" class="sl_bt2">2</button>
+                            <button onclick="sl_bt3()" class="sl_bt3">3</button>
+                            <button onclick="sl_bt4()" class="sl_bt4">4</button>
+                            <button onclick="sl_bt5()" class="sl_bt5">5</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="none_back_only_text">
+            <h1><span style="color: #0080ff;">MANY TOURIST</span> <br> ATTRACTIONS</h1>
+        </div>
+
+        <div class="footer_banner">
+            <div class="footer_banner1">
+                <h1><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span></h1>
+                <h1><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span></h1>
+            </div>
+            <div class="footer_banner2">
+                <h1><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span></h1>
+                <h1><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span><span>Food</span></h1>
+            </div>
+        </div>
+
+        <div class="food_container" id="food">
+
+            <div class="food_box">
+                <div>
+                    <img src="image/food/food1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/food/food2.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="image/food/food3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/food/food4.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="image/food/food5.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="image/food/food6.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="image/food/food7.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="image/food/food8.jpeg" alt="">
+                </div>
+                <div>
+                    <img src="image/food/food9.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="food_container_text" id="food_container_text1">
+            <h1>ROMANTIC POCHA <br> OF YEOSU</h1>
+        </div>
+
+        <div class="food_container">
+            <div class="food_box">
+                <div>
+                    <img src="image/김치/local1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/김치/local2.webp" alt="">
+                </div>
+                <div>
+                    <img src="image/김치/local3.webp" alt="">
+                </div>
+                <div>
+                    <img src="image/김치/local4.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/김치/local5.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/김치/local6.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/김치/local7.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/김치/local8.jpg" alt="">
+                </div>
+                <div>
+                    <img src="image/김치/local9.webp" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="food_container_text" id="food_container_text2">
+            <h1>LOCAL CUISINE <br> OF YEOSU</h1>
+        </div>
+
+        <div class="activities_container" id="activities_container">
+            <div class="activities_bin"></div>
+            <div class="activities_header">
+                <div class="activities_control_box">
+                    <h1>Fun Activities You Can Enjoy<br>in Yeosu</h1>
+                </div>
+            </div>
+            <div class="activities_body">
+                <div class="activities_ani_box">
+                    <div class="acti_banner">
+                        <h1 class="acti_text">Marine Cable Car</h1>
+                    </div>
+                    <div class="acti_banner">
+                        <h1 class="acti_text">Laserarena</h1>
+                    </div>
+                    <div class="acti_banner">
+                        <h1 class="acti_text">Marine Rail Bike</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="other_container" id="other_container">
+            <div class="other_bin"></div>
+            <div class="other_header">
+                <h1>Other Attractions<br>in Yeosu</h1>
+            </div>
+            <div class="other_body">
+                <div class="other_banenr">
+                    <div class="other_banenr1">
+                        <div class="name_box">
+                            <h1><span style="color: #0080ff;">Yi Sunsin</span> Square</h1>
+                            <img src="image/other/youtube_NoEic6WSQ20_1920x1080_h264.png" alt="">
+                        </div>
+                        <div class="other_img_box"></div>
+                    </div>
+                    <div class="other_banenr2"></div>
+                    <div class="other_banenr3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather_container">
+
+            <div class="inspection_container1">
+                <h1 class="inspection_ani">Loading</h1>
+            </div>
+
+            <div class="inspection_container2">
+                <h1 class="inspection_ani">Loading</h1>
+            </div>
+
+            <div class="weather">
+                <div class="weather_header">
+                    <select name="" class="city_select">
+                        <option selected class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                        <option class="city_data" value=""></option>
+                    </select>
+                    <div class="wea_con">
+                        <div class="wea_con_box">
+                            <img class="not_wea_img" src="image/weather/icon_flat_wt5.svg" alt="">
+                            <h1 class="now_c">Loading...</h1>
+                        </div>
+                        <span class="today_wea_text">Loading...</span>
+                    </div>
+                </div>
+                <div class="weather_body">
+                    <div>
+                        <div>
+                            <span class="today_precipitation">Current Precipitation</span>
+                            <div class="wea_img_box">
+                                <img src="image/weather/white_border_drop.png" alt="">
+                                <p class="pre_text">Loading...</p>
+                            </div>
+                            <div class="wea_font_box">
+                                <p class="wea_font_box_text">Loading...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wea_body_con">
+                        <div>
+                            <span>Wind Direction</span>
+                            <p class="wind_direction_text">
+                                <span class="wind_direction_text1">Loading...</span>
+                                <span class="wind_direction_text2">Loading...</span>
+                            </p>
+                        </div>
+                        <div>
+                            <span>east-west wind</span>
+                            <p class="east_west_wind_text">Loading...</p>
+                        </div> 
+                        <div>
+                            <span>north-south wind</span>
+                            <p class="north_south_wind_text">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="random_tourist">
+
+            <div class="random_tourist_bin"></div>
+            <div class="random_tourist_header">
+                <h1>Where will Yeosu take you<br>today?</h1>
+            </div>
+            <div class="random_tourist_body">
+                <div class="random_tourist_content">
+
+                    <div class="random_rist_box">
+                        <div class="random_rist_container">
+                            
+                        </div>
+                    </div>
+
+                    <div class="random_tourist_ani_box">
+                        <div class="ran_ani_box">
+                            <img src="image/drag/drag.png" alt="">
+                            <h1>Drag And Drop</h1>
+                        </div>
+                    </div>
+
+                    <div class="random_tourist_show_content" ondragover="over1(event)" ondrop="drop1(event)">
+                        <div draggable="true" class="item">
+                            <h1 class="item_name"></h1>
+                            <img class="item_img" src="" alt="">
+                        </div>
+                        <div draggable="true" class="item">
+                            <h1 class="item_name"></h1>
+                            <img class="item_img" src="" alt="">
+                        </div>
+                        <div draggable="true" class="item">
+                            <h1 class="item_name"></h1>
+                            <img class="item_img" src="" alt="">
+                        </div>
+                        <div draggable="true" class="item">
+                            <h1 class="item_name"></h1>
+                            <img class="item_img" src="" alt="">
+                        </div>
+                        <div draggable="true" class="item">
+                            <h1 class="item_name"></h1>
+                            <img class="item_img" src="" alt="">
+                        </div>
+                        <div draggable="true" class="item">
+                            <h1 class="item_name"></h1>
+                            <img class="item_img" src="" alt="">
+                        </div>
+                        <div draggable="true" class="item">
+                            <h1 class="item_name"></h1>
+                            <img class="item_img" src="" alt="">
+                        </div>
+                        <div draggable="true" class="item">
+                            <h1 class="item_name"></h1>
+                            <img class="item_img" src="" alt="">
+                        </div>
+                        <div draggable="true" class="item">
+                            <h1 class="item_name"></h1>
+                            <img class="item_img" src="" alt="">
+                        </div>
+                        <div draggable="true" class="item">
+                            <h1 class="item_name"></h1>
+                            <img class="item_img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="random_tourist_list">
+                        <div class="random_tourist_list_cart" ondragover="over(event)" ondrop="drop(event)">
+                            <p>Drop Here!</p>
+                        </div>
+                    </div>
+                    <div class="random_tourist_list_btn_box">
+                        <button onclick="start()">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer_container">
+            <div class="jum_box1">
+            </div>
+            <div class="jum_box2">
+            </div>
+            <div class="realfooter">
+                <footer>
+                    <div class="footer_1"></div>
+                    <div class="footer_2">
+                        <div class="footer_2_container">
+                            <div class="ship">
+                                <div class="ship_box">
+                                    <div class="ship_long">
+                                        <div class="ship_long_box"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="footer_2_text">
+                                <p>Welcome to</p>
+                                <h1>Yeosu</h1>
+                            </div>
+
+                            <div class="bird1">
+                                <div class="bird1_box"></div>
+                            </div>
+
+                            <div class="bird2">
+                                <div class="bird2_box"></div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+    </div>
+    
+    <script src="english.js"></script>
+</body>
+</html>
