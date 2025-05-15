@@ -720,8 +720,11 @@ function time() {
     const now = new Date();
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
+    const year = now.getFullYear();         
+    const month = String(now.getMonth() + 1).padStart(2, '0');
+    const day = String(now.getDate()).padStart(2, '0');
   
-    const url = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?serviceKey=ZN5WGEIR6RyBLmDtW55wpvHHSX%2FrvN4wxkMwfs2U9kPGADbga%2FDxAV1E6l5xnzgSJrzOpc6fIXHq%2B2ArmG4w8Q%3D%3D&pageNo=1&numOfRows=1000&dataType=JSON&base_date=20250514&base_time=${hours}${minutes}&${xny}`;
+    const url = `https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtNcst?serviceKey=ZN5WGEIR6RyBLmDtW55wpvHHSX%2FrvN4wxkMwfs2U9kPGADbga%2FDxAV1E6l5xnzgSJrzOpc6fIXHq%2B2ArmG4w8Q%3D%3D&pageNo=1&numOfRows=1000&dataType=JSON&base_date=${year}${month}${day}&base_time=${hours}${minutes}&${xny}`;
     return url;
 }
 let not_wea_img;
